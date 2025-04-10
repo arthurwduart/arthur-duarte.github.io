@@ -23,13 +23,14 @@ repository               : "arthurwduart/arthur-duarte.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Arthur Duarte"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Meteorologista"
+  location         : "Cachoeira Paulista, SP, Brasil"
+  employer         : "Instituto Nacional de Pesquisas Espaciais (INPE)"
+  position         : "Aluno de Pós-Graduação"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "arthur.duarte@inpe.br" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -45,7 +46,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "arthurwduart"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -59,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/arthur-duarte-519a91278/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
