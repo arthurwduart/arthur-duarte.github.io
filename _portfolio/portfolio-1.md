@@ -1,6 +1,6 @@
 ---
 title: "🗺️ Mapas com o uso do QGIS"
-excerpt: "Short description of portfolio item number 1"
+#excerpt: "Short description of portfolio item number 1"
 collection: portfolio
 ---
 
