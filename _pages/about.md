@@ -14,6 +14,9 @@ redirect_from:
 
 📚 Atualmente, estou trabalhando com o modelo WRF e seu pacote de assimilação de dados (WRFDA) para assimilar dados de ar superior na região da Confluência Brasil-Malvinas.
 
+
+![](https://raw.githubusercontent.com/github/arthur-duarte.github.io/images/fundo.jpg)
+
 # Selected Experience
 
 ## 🤖 Open Source Contributions
