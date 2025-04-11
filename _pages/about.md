@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "👋🏼 Hello there, I'm Boris!"
-excerpt: "About me"
+title: "👋🏼 Olá, eu sou [**Arthur Duarte**](http://lattes.cnpq.br/1585235493457342)"
+excerpt: "Saiba mais sobre minha pesquisa, interesses e experiência acadêmica."
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,13 +10,13 @@ redirect_from:
 
 
 
-👨🏻‍💻 I'm a final year graduate student at the TU Berlin.
+👨🏻‍💻 Sou um estudante de pós-graduação em meteorologia no Instituto Nacional de Pesquisas Espaciais (INPE).
 
-🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
+🔬 Sou formado em Ciências Atmosféricas pela Universidade Federal do Oeste do Pará (UFOPA, 2024) e atualmente sou mestrando em Meteorologia no Instituto Nacional de Pesquisas Espaciais (INPE). Minha experiência em geociências, com ênfase em meteorologia, inclui instrumentação meteorológica, modelagem atmosférica regional e assimilação de dados. 
 
-📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
+Já atuei nas áreas de eventos climáticos extremos, biometeorologia humana, climatologia da Amazônia e cartografia aplicada. Além disso, tenho conhecimento em linguagens de programação como Python, R, GrADS e Shell Script. 
 
-📽️ I am also interested in assisting others on their path in the world of Machine Learning and academia.
+📚 Atualmente, estou trabalhando com o modelo WRF e seu pacote de assimilação de dados (WRFDA) para assimilar dados de ar superior na região da Confluência Brasil-Malvinas.
 
 # Selected Experience
 
@@ -38,7 +38,4 @@ Currently I am working as a **Student Researcher** at the Reliable Multimodal AI
 Additionally, I have professional experience working as an **Applied Machine Learning Student Researcher** at the Fraunhofer Heinrich Hertz Institute. \
 There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
 
-## 📚 Teaching and Community Contributions
-To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine 
-Learning content.
 
