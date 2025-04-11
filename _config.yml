@@ -81,9 +81,9 @@ publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Artigo em Revistas'    
   conferences:
-    title: 'Conference Papers'
+    title: 'Artigo de Congressos'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
