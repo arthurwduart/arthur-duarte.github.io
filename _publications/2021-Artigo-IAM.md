@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2022-arena-bench
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
 date: 2021-09-16
-venue: "Robotics and Automation Letters (RA-L)"
+venue: "Revista de Geociências do Nordeste (REGNE)"
 paperurl: "https://periodicos.ufrn.br/revistadoregne/article/view/24543"
 citation: "MENDES, Ana Vitória Padilha et al. Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/PA. <strong>Revista de Geociências do Nordeste</strong>, p. 153–161, 2021."
 ---
