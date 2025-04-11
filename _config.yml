@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "pt-BR"
 site_theme               : "default"
 title                    : "Arthur Duarte Homepage"
 title_separator          : "-"
