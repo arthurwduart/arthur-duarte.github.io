@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼 Saiba mais sobre minha pesquisa, interesses e experiência acadêmica"
+title: "Saiba mais sobre minha pesquisa, interesses e experiência acadêmica"
 excerpt: "Saiba mais sobre minha pesquisa, interesses e experiência acadêmica"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-👨🏻‍💻 Olá, eu sou [**Arthur Duarte**](http://lattes.cnpq.br/1585235493457342), formado em Ciências Atmosféricas pela [Universidade Federal do Oeste do Pará (UFOPA, 2024) (https://www.ufopa.edu.br/ufopa/)] (UFOPA, 2024) e atualmente mestrando em Meteorologia no Instituto Nacional de Pesquisas Espaciais (INPE). Minha experiência em geociências, com ênfase em meteorologia, inclui instrumentação meteorológica, modelagem atmosférica regional e assimilação de dados. 
+👨🏻‍💻 Olá, eu sou [**Arthur Duarte**](http://lattes.cnpq.br/1585235493457342), formado em Ciências Atmosféricas pela [Universidade Federal do Oeste do Pará (https://www.ufopa.edu.br/ufopa/)] (UFOPA, 2024) e atualmente mestrando em Meteorologia no Instituto Nacional de Pesquisas Espaciais (INPE). Minha experiência em geociências, com ênfase em meteorologia, inclui instrumentação meteorológica, modelagem atmosférica regional e assimilação de dados. 
 
 🛠️ Já atuei nas áreas de eventos climáticos extremos, biometeorologia humana, climatologia da Amazônia e cartografia aplicada. Além disso, tenho conhecimento em linguagens de programação como Python, R, GrADS e Shell Script. 
 
