@@ -1,7 +1,7 @@
 ---
-title: "Título do Artigo Número 4"
+title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/PA"
 collection: publications
-category: conferences
+category: #conferences
 permalink: /publication/2024-02-17-titulo-do-artigo-numero-4
 excerpt: 'Este artigo trata da correção do problema de template nº 693.'
 date: 2024-02-17
