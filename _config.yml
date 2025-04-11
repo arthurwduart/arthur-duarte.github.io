@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Meteorologista"
   location         : "Cachoeira Paulista, SP, Brasil"
-  employer         : "Instituto Nacional de Pesquisas Espaciais (INPE)"
+  employer         : "Instituto Nacional de Pesquisas Espaciais<br>(INPE)"
   position         : "Aluno de Pós-Graduação"
   uri              : # URL
   email            : "arthur.duarte@inpe.br" 
