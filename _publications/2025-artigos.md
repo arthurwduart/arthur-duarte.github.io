@@ -1,11 +1,11 @@
 ---
-title: "Arena-Bench: A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments"
+title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/PA"
 collection: publications
 permalink: /publication/2022-arena-bench
 excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
 date: 2022-10-01
 venue: "Robotics and Automation Letters (RA-L)"
-paperurl: "https://arxiv.org/abs/2206.05728"
+paperurl: "https://periodicos.ufrn.br/revistadoregne/article/view/24543"
 citation: "KASTNER, L. et al. Arena-Bench: A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments. *Robotics and Automation Letters*, 2022."
 ---
 
