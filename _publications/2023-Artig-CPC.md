@@ -1,5 +1,5 @@
 ---
-title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/PA"
+title: 'Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil'
 collection: publications
 permalink: /publication/2022-arena-bench
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
@@ -8,8 +8,6 @@ venue: "Revista de Geociências do Nordeste (REGNE)"
 paperurl: "https://periodicos.ufsm.br/cienciaenatura/article/view/81776"
 citation: 'BRANCHES VIANA, Losany et al. Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil. <strong>Revista Ciência e Natura</strong>, v. 45, 2023.'
 ---
-
-## 🌧️ Avaliação dos dados do CPC em sítios micrometeorológicos da Amazônia e Caatinga
 
 Com a crescente necessidade de compreender melhor a interação biosfera-atmosfera em diversos **sítios micrometeorológicos** espalhados por diferentes biomas brasileiros, torna-se cada vez mais importante o uso de **dados estimados de precipitação pluviométrica**, especialmente quando há ausência de medições diretas nos períodos analisados.
 
