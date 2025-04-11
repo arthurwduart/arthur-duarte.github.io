@@ -1,13 +1,13 @@
 ---
-title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/PA"
+title: "Título do Artigo Número 4"
 collection: publications
 category: congressos
 permalink: /publication/2024-02-17-titulo-do-artigo-numero-4
-#excerpt: 'Este artigo trata a relação das variáveis meteorológicas com o infarto agudo do miocardio'
-date: 16-09-2021
-venue: 'Revista de Geociências Do Nordeste'
+excerpt: 'Este artigo trata da correção do problema de template nº 693.'
+date: 2024-02-17
+venue: 'Revista de Bugs do GitHub'
 paperurl: 'https://arthurwduart.github.io/arthur-duarte.github.io/files/artigo_infarto.pdf'
-#citation: 'Seu Nome. (2024). "Título do Artigo Número 4." <i>Revista de Bugs do GitHub</i>, 1(3).'
+citation: 'Seu Nome. (2024). "Título do Artigo Número 4." <i>Revista de Bugs do GitHub</i>, 1(3).'
 ---
 
 
