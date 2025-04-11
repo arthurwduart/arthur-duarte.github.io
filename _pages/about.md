@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-👨🏻‍💻 Olá, eu sou [**Arthur Duarte**](http://lattes.cnpq.br/1585235493457342), formado em Ciências Atmosféricas pela [Universidade Federal do Oeste do Pará (UFOPA)](https://www.ufopa.edu.br/ufopa/) em 2024, e atualmente mestrando em Meteorologia no Instituto Nacional de Pesquisas Espaciais (INPE). Minha experiência em geociências, com ênfase em meteorologia, inclui instrumentação meteorológica, modelagem atmosférica regional e assimilação de dados. 
+👨🏻‍💻 Olá, eu sou [**Arthur Duarte**](http://lattes.cnpq.br/1585235493457342), formado em Ciências Atmosféricas pela [Universidade Federal do Oeste do Pará (UFOPA)](https://www.ufopa.edu.br/ufopa/) em 2024, e atualmente mestrando em Meteorologia no [Instituto Nacional de Pesquisas Espaciais (INPE)](https://www.gov.br/inpe/pt-br). Minha experiência em Geociências, com ênfase em Meteorologia, inclui **instrumentação meteorológica**, **modelagem atmosférica regional** e **assimilação de dados**.
 
 🛠️ Já atuei nas áreas de eventos climáticos extremos, biometeorologia humana, climatologia da Amazônia e cartografia aplicada. Além disso, tenho conhecimento em linguagens de programação como Python, R, GrADS e Shell Script. 
 
