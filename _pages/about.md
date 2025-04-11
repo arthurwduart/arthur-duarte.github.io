@@ -1,45 +1,43 @@
+![Ilustração da combinação de modalidades de visão e linguagem](/images/image_to_text_vis.png){: .align-right width="300px"}
+
+👨🏻‍💻 Sou um estudante de pós-graduação no último ano na **TU Berlin**.
+
+🔬 Meus interesses de pesquisa estão na interseção entre **visão computacional** e **linguagem natural**, além de **Aprendizado Auto-Supervisionado**.
+
+📚 Atualmente estou desenvolvendo minha **Tese de Mestrado** na área de **Modelagem Visão-Linguagem**.
+
+📽️ Também tenho interesse em ajudar outras pessoas em sua trajetória no mundo do **Aprendizado de Máquina** e da **academia**.
+
 ---
-permalink: /
-title: "👋🏼 Hello there, I'm Boris!"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+
+# Experiência Selecionada
+
+## 🤖 Contribuições para Projetos Open Source
+
+Tenho experiência contribuindo para o projeto [Arena Bench](https://github.com/Arena-Rosnav), um grande repositório open source para desvio de obstáculos com robôs utilizando **Aprendizado por Reforço Profundo**.
+
+Além disso, publiquei um [artigo relacionado](https://sudo-boris.github.io/publication/2022-Arena-Bench) na conferência **IROS** e no periódico **Robotics and Automation Letters (RA-L)**.
+
 ---
 
+## 📜 Reimplementação e Reprodução de Artigos
 
+Tenho experiência com **pesquisa independente**. Reimplementei o artigo _Reward Constrained Policy Optimization_ no framework `stable-baselines3` com PPO, e reproduzi os resultados originais conduzindo e acompanhando os experimentos.
 
-![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
-👨🏻‍💻 I'm a final year graduate student at the TU Berlin.
+Para complementar esse trabalho, submeti um post para a trilha de blogposts da **ICLR**, explicando a teoria do artigo e os resultados que obtive.
 
-🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
+Você pode conferir esse projeto no meu [portfólio](https://sudo-boris.github.io/portfolio/RCPPO/).
 
-📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
+---
 
-📽️ I am also interested in assisting others on their path in the world of Machine Learning and academia.
+## 👨🏻‍🔬 Experiência Profissional
 
-# Selected Experience
+Atualmente sou **Pesquisador Estudante** no laboratório *Reliable Multimodal AI Lab* da **TU Darmstadt**, sob supervisão do Prof. Marcus Rohrbach, trabalhando com **Modelagem Generativa de Vídeo e Linguagem**.
 
-## 🤖 Open Source Contributions
-I have experience contributing to [Arena Bench](https://github.com/Arena-Rosnav) a large open-source project for robotic obstacle avoidance using Deep Reinforcement Learning.
+Também trabalhei como **Pesquisador Estudante em Aprendizado de Máquina Aplicado** no **Fraunhofer Heinrich Hertz Institute**, desenvolvendo previsão de fluxo de tráfego dinâmico com **Redes Neurais em Grafos (GNNs)**.
 
-Moreover, I have published a [respective paper](https://sudo-boris.github.io/publication/2022-Arena-Bench) at the IROS conference and in the Robotics and Automation Letters (RA-L) journal.
+---
 
-## 📜 Reimplementing and Reproducing Papers
-I have experience with independent research. I have implemented the Reward Constrained Policy Optimization paper into stable-baselines3 PPO and reproduced the original results by running and tracking experiments
-.
+## 📚 Ensino e Contribuições para a Comunidade
 
-To accompany this work, I have submitted a blog post to the **ICLR** Blogposts Track communicating the paper's theory and my results.
-
-Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/portfolio/RCPPO/).
-
-## 👨🏻‍🔬 Professional Experience
-Currently I am working as a **Student Researcher** at the Reliable Multimodal AI Lab at the TU Darmstadt under the supervision of Prof. Marcus Rohrbach working on **Generative Video-Language Modelling**.
-Additionally, I have professional experience working as an **Applied Machine Learning Student Researcher** at the Fraunhofer Heinrich Hertz Institute. \
-There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
-
-## 📚 Teaching and Community Contributions
-To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine 
-Learning content.
-
+Para contribuir com a comunidade de Aprendizado de Máquina, mantenho um canal no [YouTube](https://www.youtube.com/@borismeinardus) e um perfil no [Medium](https://medium.com/@boris.meinardus), onde publico conteúdos educacionais sobre o tema.
