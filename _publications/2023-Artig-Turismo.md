@@ -1,26 +1,21 @@
 ---
-title: 'Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil'
+title: 'Percepção das condições climáticas e o turismo em Alter do Chão, Santarém (PA)'
 collection: publications
 permalink: /publication/2022-arena-bench
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
-date: 2023-01-01
-venue: "Revista Ciência e Natura"
-paperurl: "https://periodicos.ufsm.br/cienciaenatura/article/view/81776"
-citation: 'BRANCHES VIANA, Losany et al. Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil. <strong>Revista Ciência e Natura</strong>, v. 45, 2023.'
+date: 2023-12-04
+venue: "Revista Brasileira de Climatologia"
+paperurl: "https://ojs.ufgd.edu.br/index.php/rbclima/article/view/16874"
+citation: 'Padilha Mendes, A. V., da Silva, G. V., dos Santos Gomes, A. C., Alves Batalha, S. S., Brito Costa, G., Duarte Silva, A. W., & Favacho da Cruz, R. (2023). Percepção das condições climáticas e o turismo em Alter do Chão, Santarém (PA). <strong>Revista Brasileira De Climatologia<strong>, 33(19), 534–557.'
 ---
 
-Com a crescente necessidade de compreender melhor a interação biosfera-atmosfera em diversos **sítios micrometeorológicos** espalhados por diferentes biomas brasileiros, torna-se cada vez mais importante o uso de **dados estimados de precipitação pluviométrica**, especialmente quando há ausência de medições diretas nos períodos analisados.
+O presente trabalho visa analisar a **percepção do clima e a influência das condições climáticas no turismo em Alter do Chão/PA**. Para este estudo, foram utilizados dados de precipitação de Santarém e totais fluviométricos do rio Tapajós, obtidos por meio da Agência Nacional de Águas, no período de 2000 a 2021, e as informações primárias foram obtidas por meio de questionários semiestruturados. 
 
-Neste contexto, o presente estudo teve como objetivo **avaliar o desempenho dos dados de precipitação do Climate Prediction Center (CPC)** para regiões de dois biomas distintos: **Amazônia e Caatinga**. Os dados estimados foram comparados com observações de **estações meteorológicas convencionais do INMET** localizadas próximas aos sítios analisados.
+A análise dos dados revelou que o **índice fluviométrico do rio Tapajós** apresenta uma variação mensal com um ciclo anual, registrando valores mínimos em novembro (196,1 mm) e máximos em maio (724,9 mm). Conforme a **percepção dos entrevistados**, os meses de **maior** fluxo turístico ocorrem durante a estação seca, uma vez que o principal atrativo da Vila é o segmento de “sol e praia”. Atualmente, a economia da Vila depende na maioria do turismo. E as principais dificuldades para o desenvolvimento do turismo em Alter do Chão são a falta de conscientização dos moradores e visitantes em relação à preservação local, bem como a ausência de saneamento básico. Vale ressaltar que, com uma alteração no ciclo anual, consequentemente haverá um impacto na sazonalidade, a qual tem seus períodos de alta e baixa temporada diretamente influenciados pela **dinâmica fluviométrica e pluviométrica**. 
 
-Foram utilizados dados diários acumulados de precipitação fornecidos pelo **CPC/NCEP/NOAA (Climate Prediction Center/National Centers for Environmental Prediction/National Oceanic and Atmospheric Administration)**, com **resolução espacial de 0.5° x 0.5°**, para diferentes períodos em cada sítio.
+Diante disso, há necessidade de uma estrutura turística organizada e sustentável para reduzir os impactos negativos ao meio ambiente, e possivelmente promover um **turismo mais consciente**, preservando o meio ambiente e garantir também, o desenvolvimento econômico da região.
 
-As análises foram conduzidas por meio de **técnicas estatísticas** como **boxplots** e **correlação de Pearson**, comparando os dados estimados com as observações reais.
-
-Os resultados mostraram que, apesar dos dados do CPC representarem bem a **sazonalidade da precipitação** nas regiões analisadas, sua **representatividade estatística varia significativamente entre os locais**. Isso demonstra que, para usos mais precisos, como nos sítios **K83 (Amazônia)** e **Serra Talhada (Caatinga)**, os dados do CPC devem passar por processos de **refinamento e validação** antes de serem considerados representativos.
-
-
-📎 [Acesse o artigo completo aqui](https://periodicos.ufsm.br/cienciaenatura/article/view/81776)  
+📎 [Acesse o artigo completo aqui](https://ojs.ufgd.edu.br/index.php/rbclima/article/view/16874)  
 
 > **Citação sugerida:**  
-> BRANCHES VIANA, Losany et al. *Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil*. **Revista Ciência e Natura**, v. 45, 2023.
+> Padilha Mendes, A. V., da Silva, G. V., dos Santos Gomes, A. C., Alves Batalha, S. S., Brito Costa, G., Duarte Silva, A. W., & Favacho da Cruz, R. (2023). *Percepção das condições climáticas e o turismo em Alter do Chão, Santarém (PA)*. **Revista Brasileira De Climatologia**, 33(19), 534–557.
