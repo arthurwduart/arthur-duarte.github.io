@@ -1,5 +1,5 @@
 ---
-title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/PA"
+title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/Pa"
 collection: publications
 #permalink: /publication/2021-Artigo-IAM.md
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
