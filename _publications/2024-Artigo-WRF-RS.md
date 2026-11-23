@@ -1,6 +1,7 @@
 ---
 title: 'Dexterity of WRF and GFS models in contrast with vertical radiosonde profiles'
 collection: publications
+layout: academic-detail
 permalink: 
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
 date: 2024-12-16

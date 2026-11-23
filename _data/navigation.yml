@@ -1,34 +1,9 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
 main:
+  - title: "Início"
+    url: /
   - title: "Publicações"
-    url: /publications/
-
-  #- title: "Talks"
-  #  url: /talks/    
-
-  #- title: "Teaching"
-  #  url: /teaching/    
-    
-  - title: "Portifólio"
-    url: /portfolio/
-        
-  #- title: "Blog Posts"
-  #  url: /year-archive/
-    
+    url: "/#publicacoes"
+  - title: "Portfólio"
+    url: "/#projetos"
   - title: "Currículo Lattes"
-    #url: /cv/
-    url: /files/lattes(CL).pdf
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  #- title: "Guide"
-  #  url: /markdown/
+    url: "/#lattes"

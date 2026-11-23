@@ -1,6 +1,7 @@
 ---
 title: 'Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil'
 collection: publications
+layout: academic-detail
 permalink: 
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
 date: 2023-01-01

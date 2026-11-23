@@ -9,12 +9,12 @@
 # Basic Site Settings
 locale                   : "pt-BR"
 site_theme               : "default"
-title                    : "Arthur Duarte Homepage"
+title                    : "Arthur Duarte"
 title_separator          : "-"
 name                     : &name "Arthur Duarte"
-description              : &description "personal description"
-url                      : https://arthurwduart.github.io/arthur-duarte.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : &description "Meteorologia, pesquisa atmosférica e geociências"
+url                      : https://arthurwduart.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+baseurl                  : "/arthur-duarte.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "arthurwduart/arthur-duarte.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -28,7 +28,7 @@ author:
   bio              : "Meteorologista"
   location         : "Cachoeira Paulista, SP, Brasil"
   employer         : "Instituto Nacional de Pesquisas <br> Espaciais (INPE)"
-  position         : "Aluno de Pós-Graduação"
+  position         : "Doutorando em Meteorologia"
   uri              : # URL
   email            : "arthur.duarte@inpe.br" 
 

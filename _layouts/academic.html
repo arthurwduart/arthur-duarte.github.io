@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <meta name="theme-color" content="#0a0d14">
+  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <script src="{{ '/assets/js/academic.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</head>
+<body class="academic observatory">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.name | escape }}</a>
+      {% unless page.url == '/' %}
+      <nav aria-label="Navegação principal">
+        <ul class="site-nav">
+          {% for link in site.data.navigation.main %}
+            <li><a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title | escape }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endunless %}
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer" id="contato" tabindex="-1">
+    <div class="container footer-inner">
+      <div>
+        {% if page.visual_theme == 'observatory' %}<h2>Contato acadêmico</h2>{% endif %}
+        <strong>{{ site.name | escape }}</strong>
+        <p>{{ site.author.location | escape }}</p>
+      </div>
+      <ul class="profile-links" aria-label="Contato e perfis">
+        <li><a href="mailto:{{ site.author.email }}">E-mail</a></li>
+        <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+        <li><a href="{{ site.author.orcid }}">ORCID</a></li>
+        <li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>
+        <li><a href="{{ site.author.researchgate }}">ResearchGate</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<figure>
+  <div class="map-gallery" id="galeria" data-map-gallery>
+    {% for map in include.maps %}
+      <a href="{{ map.image | relative_url }}" aria-label="Ampliar {{ map.label | downcase | escape }}">
+        <img src="{{ map.preview | relative_url }}" alt="{{ map.label | escape }}" width="960" height="679" loading="lazy">
+        <span>{{ map.label | escape }}</span>
+      </a>
+    {% endfor %}
+  </div>
+  <figcaption>Mapas desenvolvidos no QGIS envolvendo uso e ocupação do solo, elevação terrestre e áreas de estudo.</figcaption>
+</figure>
+
+<dialog class="map-viewer" data-map-viewer aria-labelledby="map-viewer-title">
+  <div class="map-viewer-header">
+    <h2 id="map-viewer-title"></h2>
+    <form method="dialog"><button type="submit">Fechar</button></form>
+  </div>
+  <img alt="" data-map-full>
+  <div class="map-viewer-controls">
+    <button type="button" data-map-previous>Anterior</button>
+    <a data-map-original>Abrir imagem original</a>
+    <button type="button" data-map-next>Próximo</button>
+  </div>
+</dialog>

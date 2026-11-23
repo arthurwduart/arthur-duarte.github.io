@@ -1,0 +1,198 @@
+---
+layout: academic
+visual_theme: observatory
+permalink: /
+title: "Meteorologia e Ciências Atmosféricas"
+excerpt: "Arthur Duarte, meteorologista e doutorando em Meteorologia no INPE. Pesquisa em modelagem atmosférica, assimilação de dados e instrumentação meteorológica."
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<nav class="section-nav" aria-label="Nesta página">
+  <ul class="container">
+    <li><a href="#inicio" aria-current="location">Início</a></li>
+    <li><a href="#perfil">Perfil</a></li>
+    <li><a href="#formacao">Formação</a></li>
+    <li><a href="#pesquisa">Pesquisa</a></li>
+    <li><a href="#publicacoes">Publicações</a></li>
+    <li><a href="#experiencia">Experiência</a></li>
+    <li><a href="#projetos">Portfólio</a></li>
+    <li><a href="#lattes">Currículo Lattes</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <h1>{{ site.name | escape }}</h1>
+      <p class="hero-affiliation">Meteorologia · INPE</p>
+      <p class="hero-intro">Doutorando em Meteorologia no INPE, com foco em modelagem atmosférica regional e assimilação de dados.</p>
+      <div class="actions">
+        <a class="button button-primary" href="#pesquisa">Conheça minha pesquisa</a>
+        <a class="button" href="#publicacoes">Ver publicações</a>
+      </div>
+    </div>
+    <div class="hero-portrait-wrap">
+      <div class="portrait-orbit" aria-hidden="true">
+        <span class="orbit-square" style="--x: 7%; --y: 5%"></span>
+        <span class="orbit-opposite" style="--x: 93%; --y: 95%"></span>
+      </div>
+      <div class="portrait-orbit portrait-satellites" aria-hidden="true">
+        <span style="--x: 29%; --y: 1%; --orbit-delay: -1s; --orbit-period: 27s"></span>
+        <span style="--x: 37%; --y: 1%; --orbit-delay: -2s; --orbit-period: 26s"></span>
+        <span style="--x: 45%; --y: 1%; --orbit-delay: -3s; --orbit-period: 25s"></span>
+        <span style="--x: 53%; --y: 1%; --orbit-delay: -4s; --orbit-period: 24s"></span>
+        <span style="--x: 61%; --y: 1%; --orbit-delay: -5s; --orbit-period: 23s"></span>
+      </div>
+      <figure class="hero-profile">
+        <img class="portrait" src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="Retrato de Arthur Duarte" width="700" height="700" fetchpriority="high">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="academic-band">
+<section id="perfil" class="container section profile-grid" aria-labelledby="profile-title" tabindex="-1">
+  <div data-scroll-reveal>
+    <h2 id="profile-title">Perfil acadêmico</h2>
+    <p>Minha atuação em Ciências Atmosféricas reúne modelagem regional, assimilação de dados e instrumentação. Também trabalhei com eventos climáticos extremos, biometeorologia humana, climatologia da Amazônia e cartografia aplicada.</p>
+    <p>No trabalho com dados, uso Python, R, GrADS e scripts de shell.</p>
+  </div>
+  <div class="profile-resources" data-scroll-reveal>
+    <a href="#lattes">Currículo Lattes</a>
+    <a href="{{ site.author.orcid }}">ORCID</a>
+    <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+  </div>
+</section>
+</div>
+<div class="academic-band academic-band-alt">
+<section id="formacao" class="container section" aria-labelledby="education-title" tabindex="-1">
+  <h2 id="education-title" data-scroll-reveal>Formação acadêmica</h2>
+  <ol class="education-timeline">
+    <li data-scroll-reveal>
+      <p class="timeline-period">Em andamento</p>
+      <h3>Doutorado em Meteorologia</h3>
+      <p><a href="https://www.gov.br/inpe/pt-br">Instituto Nacional de Pesquisas Espaciais (INPE)</a></p>
+    </li>
+    <li data-scroll-reveal>
+      <p class="timeline-period"><time datetime="2026">2026</time></p>
+      <h3>Mestrado em Meteorologia</h3>
+      <p><a href="https://www.gov.br/inpe/pt-br">Instituto Nacional de Pesquisas Espaciais (INPE)</a></p>
+    </li>
+    <li data-scroll-reveal>
+      <p class="timeline-period"><time datetime="2024">2024</time></p>
+      <h3>Graduação em Ciências Atmosféricas</h3>
+      <p><a href="https://www.ufopa.edu.br/ufopa/">Universidade Federal do Oeste do Pará (UFOPA)</a></p>
+    </li>
+  </ol>
+</section>
+</div>
+<div class="academic-band">
+<section id="pesquisa" class="container section research-grid" aria-labelledby="research-title" tabindex="-1">
+    <div data-scroll-reveal>
+      <h2 id="research-title">Linhas de pesquisa</h2>
+      <h3>Assimilação de dados na Confluência Brasil–Malvinas</h3>
+      <p>Uso o modelo atmosférico WRF e seu sistema de assimilação, o WRFDA, para incorporar observações de ar superior em simulações da região.</p>
+    </div>
+    <div class="topics" aria-label="Temas de pesquisa" data-scroll-reveal>
+      <details>
+        <summary>Modelagem atmosférica regional</summary>
+        <p>Uso o WRF para simular a atmosfera na região da Confluência Brasil–Malvinas.</p>
+      </details>
+      <details>
+        <summary>Assimilação de dados</summary>
+        <p>Com o WRFDA, incorporo observações de ar superior ao estado inicial das simulações.</p>
+      </details>
+      <details>
+        <summary>Instrumentação meteorológica</summary>
+        <p>Na Amazônia, colaborei na recepção de dados de radiossondas em Belém e Santarém.</p>
+      </details>
+    </div>
+  </section>
+</div>
+<div class="academic-band academic-band-alt">
+<section id="publicacoes" class="container section" aria-labelledby="selected-title" tabindex="-1">
+    <div class="section-heading" data-scroll-reveal>
+      <h2 id="selected-title">Publicações</h2>
+      <a class="text-link" href="{{ site.author.googlescholar }}">Ver perfil no Google Scholar</a>
+    </div>
+    {% assign publications = site.publications | sort: 'date' | reverse %}
+    <div class="publication-filters" data-publication-filters hidden>
+      <label>Buscar publicações
+        <input type="search" data-publication-search placeholder="Título ou revista">
+      </label>
+      <label>Ano
+        <select data-publication-year>
+          <option value="">Todos os anos</option>
+          {% assign previous_year = '' %}
+          {% for publication in publications %}
+            {% assign year = publication.date | date: '%Y' %}
+            {% if year != previous_year %}
+              <option value="{{ year }}">{{ year }}</option>
+              {% assign previous_year = year %}
+            {% endif %}
+          {% endfor %}
+        </select>
+      </label>
+      <p role="status" data-publication-count></p>
+    </div>
+    <ol class="publication-list">
+      {% for publication in publications %}
+        <li class="publication" data-year="{{ publication.date | date: '%Y' }}">
+          <time datetime="{{ publication.date | date: '%Y-%m-%d' }}">{{ publication.date | date: '%Y' }}</time>
+          <div>
+            <h3>{{ publication.title | escape }}</h3>
+            <p>{{ publication.venue | escape }}</p>
+            <details>
+              <summary>Resumo e citação</summary>
+              <div class="publication-abstract">
+                {{ publication.content | markdownify }}
+                {% if publication.citation %}
+                  <p><strong>Citação</strong></p>
+                  <p>{{ publication.citation }}</p>
+                {% endif %}
+              </div>
+            </details>
+            {% if publication.paperurl %}
+              <a class="text-link" href="{{ publication.paperurl | escape }}" aria-label="Ler na revista: {{ publication.title | escape }}">Ler na revista</a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+    <p class="empty-results" data-publication-empty hidden>Nenhuma publicação corresponde à busca.</p>
+  </section>
+</div>
+<div class="academic-band">
+<section id="experiencia" class="container section feature-grid" aria-labelledby="experience-title" tabindex="-1">
+    <img class="feature-image" src="{{ '/images/fundo.jpg' | relative_url }}" alt="Balão meteorológico sob nuvens escuras em uma área de campo" width="800" height="800" loading="lazy" data-scroll-reveal>
+    <div data-scroll-reveal>
+      <p class="eyebrow">Experiência</p>
+      <h2 id="experience-title">Observações atmosféricas na Amazônia</h2>
+      <p>Durante a graduação, colaborei no desenvolvimento de um sistema de recepção de dados de radiossondas. Os lançamentos das 00 e 12 UTC coletam dados da superfície até a baixa estratosfera. Os testes começaram em 2023, e o sistema opera continuamente em Belém e Santarém, no Pará.</p>
+      <a class="text-link" href="#projetos">Explorar o portfólio</a>
+    </div>
+  </section>
+</div>
+{% assign featured_project = site.portfolio | first %}
+<div class="academic-band academic-band-alt">
+  <section id="projetos" class="container section" aria-labelledby="project-title" tabindex="-1">
+    <div data-scroll-reveal>
+      <h2 id="project-title">Portfólio</h2>
+      <p>{{ featured_project.excerpt | strip_html | escape }}</p>
+    </div>
+    {% include map-gallery.html maps=featured_project.maps %}
+  </section>
+</div>
+
+<div class="academic-band">
+  <section id="lattes" class="container section" aria-labelledby="lattes-title" tabindex="-1">
+    <h2 id="lattes-title" data-scroll-reveal>Currículo Lattes</h2>
+    <div class="actions" data-scroll-reveal>
+      <a class="button button-primary" href="https://lattes.cnpq.br/1585235493457342">Consultar na Plataforma Lattes</a>
+      <a class="button" href="{{ '/files/lattes(CL).pdf' | relative_url }}">Abrir currículo em PDF</a>
+    </div>
+  </section>
+</div>

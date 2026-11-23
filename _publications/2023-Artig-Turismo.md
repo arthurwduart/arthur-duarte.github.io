@@ -1,6 +1,7 @@
 ---
 title: 'Percepção das condições climáticas e o turismo em Alter do Chão, Santarém (PA)'
 collection: publications
+layout: academic-detail
 permalink: /publication/2022-arena-bench
 #excerpt: "Este artigo apresenta a Arena-Bench, uma suíte de benchmarking para treinar, testar e avaliar planejadores de navegação em ambientes 3D altamente dinâmicos, com foco na comparação entre abordagens baseadas em modelos e aprendizado por reforço profundo (DRL)."
 date: 2023-12-04
