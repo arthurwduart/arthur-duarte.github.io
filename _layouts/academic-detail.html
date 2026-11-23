@@ -15,7 +15,10 @@ layout: academic
         <p>{{ page.venue | escape }} · {{ page.date | date: '%Y' }}</p>
       {% endif %}
       {% if page.paperurl %}
-        <a class="text-link" href="{{ page.paperurl | escape }}">Ler na revista</a>
+        <a class="text-link" href="{{ page.paperurl | escape }}">{% if page.kind == 'dissertation' %}Consultar no INPE{% else %}Ler na revista{% endif %}</a>
+      {% endif %}
+      {% if page.pdf_url %}
+        <a class="text-link" href="{{ page.pdf_url | escape }}">Abrir PDF</a>
       {% endif %}
     </div>
   </header>

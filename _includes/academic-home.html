@@ -134,11 +134,19 @@
         {% if page.language == 'en' %}
           {% assign publication_title = publication.title_en | default: publication.title %}
         {% endif %}
+        {% assign publication_link_label = t.journal %}
+        {% if publication.kind == 'dissertation' %}
+          {% assign publication_link_label = t.repository %}
+        {% endif %}
+        {% assign date_format = '%Y-%m-%d' %}
+        {% if publication.date_precision == 'month' %}
+          {% assign date_format = '%Y-%m' %}
+        {% endif %}
         <li class="publication" data-year="{{ publication.date | date: '%Y' }}">
-          <time datetime="{{ publication.date | date: '%Y-%m-%d' }}">{{ publication.date | date: '%Y' }}</time>
+          <time datetime="{{ publication.date | date: date_format }}">{{ publication.date | date: '%Y' }}</time>
           <div>
             <h3>{{ publication_title | escape }}</h3>
-            <p>{{ publication.venue | escape }}</p>
+            <p>{% if publication.kind == 'dissertation' %}{{ t.dissertation }} · {% endif %}{{ publication.venue | escape }}</p>
             <details>
               <summary>{{ t.abstract }}</summary>
               <div class="publication-abstract">
@@ -153,9 +161,14 @@
                 {% endif %}
               </div>
             </details>
-            {% if publication.paperurl %}
-              <a class="text-link" href="{{ publication.paperurl | escape }}" aria-label="{{ t.journal }}: {{ publication_title | escape }}">{{ t.journal }}</a>
-            {% endif %}
+            <div class="publication-links">
+              {% if publication.paperurl %}
+                <a class="text-link" href="{{ publication.paperurl | escape }}" aria-label="{{ publication_link_label }}: {{ publication_title | escape }}">{{ publication_link_label }}</a>
+              {% endif %}
+              {% if publication.pdf_url %}
+                <a class="text-link" href="{{ publication.pdf_url | escape }}" aria-label="{{ t.publication_pdf }}: {{ publication_title | escape }}">{{ t.publication_pdf }}</a>
+              {% endif %}
+            </div>
           </div>
         </li>
       {% endfor %}
