@@ -89,6 +89,7 @@ if (scrollSections.length && 'IntersectionObserver' in window) {
 }
 
 const sectionMenu = document.querySelector('.section-nav');
+const languageLinks = document.querySelectorAll('[data-language-link]');
 
 if (sectionMenu) {
   const sections = Array.from(sectionMenu.querySelectorAll('a[href^="#"]'), (link) => ({
@@ -112,6 +113,11 @@ if (sectionMenu) {
     if (current === previous) return;
     previous = current;
 
+    const sectionHash = current?.link.hash;
+    languageLinks.forEach((link) => {
+      link.hash = sectionHash && sectionHash !== '#inicio' ? sectionHash : '';
+    });
+
     for (const section of sections) {
       if (section === current) section.link.setAttribute('aria-current', 'location');
       else section.link.removeAttribute('aria-current');
@@ -133,17 +139,7 @@ if (sectionMenu) {
 
   window.addEventListener('scroll', scheduleSectionUpdate, { passive: true });
   window.addEventListener('resize', scheduleSectionUpdate);
+  window.addEventListener('hashchange', scheduleSectionUpdate);
   window.addEventListener('pageshow', scheduleSectionUpdate);
   updateSection();
-}
-
-const languageLinks = document.querySelectorAll('[data-language-link]');
-
-if (languageLinks.length) {
-  function updateLanguageLinks() {
-    languageLinks.forEach((link) => { link.hash = window.location.hash; });
-  }
-
-  window.addEventListener('hashchange', updateLanguageLinks);
-  updateLanguageLinks();
 }
