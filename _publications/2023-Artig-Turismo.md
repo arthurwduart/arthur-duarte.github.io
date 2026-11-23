@@ -1,5 +1,7 @@
 ---
 title: 'Percepção das condições climáticas e o turismo em Alter do Chão, Santarém (PA)'
+title_en: "Climate perceptions and tourism in Alter do Chão, Santarém, Pará"
+summary_en: "The study combined precipitation and Tapajós River water-level records with semi-structured questionnaires to understand how climate affects tourism in Alter do Chão. Respondents reported more visitors in the dry season, when beaches are a major attraction. The authors highlighted the need for sanitation, environmental awareness, and sustainable tourism planning."
 collection: publications
 layout: academic-detail
 permalink: /publication/2022-arena-bench

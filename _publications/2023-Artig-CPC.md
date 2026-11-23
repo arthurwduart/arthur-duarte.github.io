@@ -1,5 +1,7 @@
 ---
 title: 'Análise comparativa entre dados de precipitação gerados pelo "Climate Prediction Center-CPC" versus dados observados para diferentes biomas no Brasil'
+title_en: "Comparing Climate Prediction Center precipitation estimates with observations across Brazilian biomes"
+summary_en: "The study compared daily precipitation estimates from the Climate Prediction Center with INMET station observations in the Amazon and Caatinga. The gridded data captured precipitation seasonality, but agreement varied by site. The authors identified the need for additional validation at sites including K83 and Serra Talhada."
 collection: publications
 layout: academic-detail
 permalink: 

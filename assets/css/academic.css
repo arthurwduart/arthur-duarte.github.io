@@ -836,3 +836,27 @@ img { display: block; max-width: 100%; }
   .portrait-satellites { inset: -1.65rem; }
   .orbit-square, .orbit-opposite { --companion-gap: 1.55rem; }
 }
+
+.language-switch {
+  display: flex;
+  gap: .4rem;
+  padding: .2rem;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+}
+
+.language-switch a {
+  padding: .25rem .6rem;
+  border-radius: .3rem;
+  color: var(--on-navy-muted);
+  font-size: .875rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.language-switch a[aria-current="page"] {
+  color: var(--accent);
+  background: var(--white);
+}
+
+.language-switch a:hover { text-decoration: underline; }

@@ -1,21 +1,34 @@
+{% assign language = page.language | default: 'pt' -%}
+{% assign labels = site.data.academic_text[language] -%}
+{% assign home_url = '/' -%}
+{% if language == 'en' %}{% assign home_url = '/en/' %}{% endif -%}
 <!doctype html>
-<html lang="{{ site.locale }}">
+<html lang="{% if language == 'en' %}en{% else %}{{ site.locale }}{% endif %}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include seo.html %}
+  {% if page.language %}
+    <link rel="alternate" hreflang="pt-BR" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+  {% endif %}
   <meta name="theme-color" content="#0a0d14">
-  <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | relative_url }}?v=isolines">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <script src="{{ '/assets/js/academic.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </head>
 <body class="academic observatory">
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <a class="skip-link" href="#conteudo">{{ labels.skip }}</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.name | escape }}</a>
-      {% unless page.url == '/' %}
+      <a class="wordmark" href="{{ home_url | relative_url }}">{{ site.name | escape }}</a>
+      {% if page.language %}
+      <nav class="language-switch" aria-label="{% if language == 'en' %}Site language{% else %}Idioma do site{% endif %}">
+        <a href="{{ '/' | relative_url }}" lang="pt-BR" hreflang="pt-BR" aria-label="Português do Brasil" data-language-link{% if language == 'pt' %} aria-current="page"{% endif %}>BR</a>
+        <a href="{{ '/en/' | relative_url }}" lang="en" hreflang="en" aria-label="English" data-language-link{% if language == 'en' %} aria-current="page"{% endif %}>EN</a>
+      </nav>
+      {% else %}
       <nav aria-label="Navegação principal">
         <ul class="site-nav">
           {% for link in site.data.navigation.main %}
@@ -23,7 +36,7 @@
           {% endfor %}
         </ul>
       </nav>
-      {% endunless %}
+      {% endif %}
     </div>
   </header>
 
@@ -34,11 +47,11 @@
   <footer class="site-footer" id="contato" tabindex="-1">
     <div class="container footer-inner">
       <div>
-        {% if page.visual_theme == 'observatory' %}<h2>Contato acadêmico</h2>{% endif %}
+        {% if page.visual_theme == 'observatory' %}<h2>{{ labels.academic_contact }}</h2>{% endif %}
         <strong>{{ site.name | escape }}</strong>
-        <p>{{ site.author.location | escape }}</p>
+        <p>{% if language == 'en' %}{{ labels.location }}{% else %}{{ site.author.location | escape }}{% endif %}</p>
       </div>
-      <ul class="profile-links" aria-label="Contato e perfis">
+      <ul class="profile-links" aria-label="{{ labels.contact_links }}">
         <li><a href="mailto:{{ site.author.email }}">E-mail</a></li>
         <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
         <li><a href="{{ site.author.orcid }}">ORCID</a></li>

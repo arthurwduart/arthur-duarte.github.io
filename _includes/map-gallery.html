@@ -1,24 +1,28 @@
+{% assign gallery_language = include.language | default: 'pt' %}
+{% assign gallery_text = site.data.academic_text[gallery_language] %}
 <figure>
   <div class="map-gallery" id="galeria" data-map-gallery>
     {% for map in include.maps %}
-      <a href="{{ map.image | relative_url }}" aria-label="Ampliar {{ map.label | downcase | escape }}">
-        <img src="{{ map.preview | relative_url }}" alt="{{ map.label | escape }}" width="960" height="679" loading="lazy">
-        <span>{{ map.label | escape }}</span>
+      {% assign map_label = map.label %}
+      {% if gallery_language == 'en' %}{% assign map_label = map.label_en | default: map.label %}{% endif %}
+      <a href="{{ map.image | relative_url }}" aria-label="{{ gallery_text.map_enlarge }}: {{ map_label | escape }}">
+        <img src="{{ map.preview | relative_url }}" alt="{{ map_label | escape }}" width="960" height="679" loading="lazy">
+        <span>{{ map_label | escape }}</span>
       </a>
     {% endfor %}
   </div>
-  <figcaption>Mapas desenvolvidos no QGIS envolvendo uso e ocupação do solo, elevação terrestre e áreas de estudo.</figcaption>
+  <figcaption>{{ gallery_text.map_caption }}</figcaption>
 </figure>
 
 <dialog class="map-viewer" data-map-viewer aria-labelledby="map-viewer-title">
   <div class="map-viewer-header">
     <h2 id="map-viewer-title"></h2>
-    <form method="dialog"><button type="submit">Fechar</button></form>
+    <form method="dialog"><button type="submit">{{ gallery_text.map_close }}</button></form>
   </div>
   <img alt="" data-map-full>
   <div class="map-viewer-controls">
-    <button type="button" data-map-previous>Anterior</button>
-    <a data-map-original>Abrir imagem original</a>
-    <button type="button" data-map-next>Próximo</button>
+    <button type="button" data-map-previous>{{ gallery_text.map_previous }}</button>
+    <a data-map-original>{{ gallery_text.map_original }}</a>
+    <button type="button" data-map-next>{{ gallery_text.map_next }}</button>
   </div>
 </dialog>

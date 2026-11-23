@@ -1,5 +1,7 @@
 ---
 title: "Variáveis meteorológicas e o número de internações por infarto agudo do miocárdio em Belém/Pa"
+title_en: "Meteorological variables and hospital admissions for acute myocardial infarction in Belém, Pará"
+summary_en: "The study analyzed 4,242 admissions in Belém using meteorological observations and DATASUS records from 2008 to 2018. Generalized estimating equations showed significant associations with daily maximum temperature and wind speed. Higher maximum temperatures combined with weaker winds were associated with more admissions."
 collection: publications
 layout: academic-detail
 #permalink: /publication/2021-Artigo-IAM.md

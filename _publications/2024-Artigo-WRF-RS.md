@@ -1,5 +1,7 @@
 ---
 title: 'Dexterity of WRF and GFS models in contrast with vertical radiosonde profiles'
+title_en: "Dexterity of WRF and GFS models in contrast with vertical radiosonde profiles"
+summary_en: "The study compared WRF and GFS simulations with radiosonde profiles from Santarém airport. Both models generally underestimated air temperatures at low levels and agreed more closely with observations at higher altitudes. For zonal wind, WRF showed smaller discrepancies at some levels, while overall performance was similar."
 collection: publications
 layout: academic-detail
 permalink: 

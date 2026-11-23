@@ -11,6 +11,8 @@ if (filters) {
     text: normalize(Array.from(item.querySelectorAll('h2, h3, div > p:first-of-type'), (field) => field.textContent).join(' ')),
   }));
 
+  const english = document.documentElement.lang === 'en';
+
   function filterPublications() {
     const words = normalize(search.value).trim().split(/\s+/);
     let visible = 0;
@@ -22,7 +24,10 @@ if (filters) {
       if (!publication.item.hidden) visible += 1;
     }
 
-    count.textContent = visible === 1 ? '1 publicação' : `${visible} publicações`;
+    const label = english
+      ? (visible === 1 ? 'publication' : 'publications')
+      : (visible === 1 ? 'publicação' : 'publicações');
+    count.textContent = `${visible} ${label}`;
     empty.hidden = visible !== 0;
   }
 
@@ -130,4 +135,15 @@ if (sectionMenu) {
   window.addEventListener('resize', scheduleSectionUpdate);
   window.addEventListener('pageshow', scheduleSectionUpdate);
   updateSection();
+}
+
+const languageLinks = document.querySelectorAll('[data-language-link]');
+
+if (languageLinks.length) {
+  function updateLanguageLinks() {
+    languageLinks.forEach((link) => { link.hash = window.location.hash; });
+  }
+
+  window.addEventListener('hashchange', updateLanguageLinks);
+  updateLanguageLinks();
 }

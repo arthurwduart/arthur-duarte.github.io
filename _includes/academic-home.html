@@ -1,0 +1,196 @@
+{% assign t = site.data.academic_text[page.language] %}
+<nav class="section-nav" aria-label="{{ t.section_navigation }}">
+  <ul class="container">
+    <li><a href="#inicio" aria-current="location">{{ t.home }}</a></li>
+    <li><a href="#perfil">{{ t.profile }}</a></li>
+    <li><a href="#formacao">{{ t.education }}</a></li>
+    <li><a href="#pesquisa">{{ t.research }}</a></li>
+    <li><a href="#publicacoes">{{ t.publications }}</a></li>
+    <li><a href="#experiencia">{{ t.experience }}</a></li>
+    <li><a href="#projetos">{{ t.portfolio }}</a></li>
+    <li><a href="#lattes">{{ t.lattes }}</a></li>
+    <li><a href="#contato">{{ t.contact }}</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <h1>{{ site.name | escape }}</h1>
+      <p class="hero-affiliation">{{ t.affiliation }}</p>
+      <p class="hero-intro">{{ t.intro }}</p>
+      <div class="actions">
+        <a class="button button-primary" href="#pesquisa">{{ t.explore_research }}</a>
+        <a class="button" href="#publicacoes">{{ t.view_publications }}</a>
+      </div>
+    </div>
+    <div class="hero-portrait-wrap">
+      <div class="portrait-orbit" aria-hidden="true">
+        <span class="orbit-square" style="--x: 7%; --y: 5%"></span>
+        <span class="orbit-opposite" style="--x: 93%; --y: 95%"></span>
+      </div>
+      <div class="portrait-orbit portrait-satellites" aria-hidden="true">
+        <span style="--x: 29%; --y: 1%; --orbit-delay: -1s; --orbit-period: 27s"></span>
+        <span style="--x: 37%; --y: 1%; --orbit-delay: -2s; --orbit-period: 26s"></span>
+        <span style="--x: 45%; --y: 1%; --orbit-delay: -3s; --orbit-period: 25s"></span>
+        <span style="--x: 53%; --y: 1%; --orbit-delay: -4s; --orbit-period: 24s"></span>
+        <span style="--x: 61%; --y: 1%; --orbit-delay: -5s; --orbit-period: 23s"></span>
+      </div>
+      <figure class="hero-profile">
+        <img class="portrait" src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="{{ t.portrait }}" width="700" height="700" fetchpriority="high">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="academic-band">
+<section id="perfil" class="container section profile-grid" aria-labelledby="profile-title" tabindex="-1">
+  <div data-scroll-reveal>
+    <h2 id="profile-title">{{ t.academic_profile }}</h2>
+    <p>{{ t.profile_description }}</p>
+    <p>{{ t.tools }}</p>
+  </div>
+  <div class="profile-resources" data-scroll-reveal>
+    <a href="#lattes">{{ t.lattes }}</a>
+    <a href="{{ site.author.orcid }}">ORCID</a>
+    <a href="{{ site.author.googlescholar }}">Google Scholar</a>
+  </div>
+</section>
+</div>
+<div class="academic-band academic-band-alt">
+<section id="formacao" class="container section" aria-labelledby="education-title" tabindex="-1">
+  <h2 id="education-title" data-scroll-reveal>{{ t.academic_education }}</h2>
+  <ol class="education-timeline">
+    <li data-scroll-reveal>
+      <p class="timeline-period">{{ t.in_progress }}</p>
+      <h3>{{ t.doctorate }}</h3>
+      <p><a href="https://www.gov.br/inpe/pt-br">{{ t.inpe }}</a></p>
+    </li>
+    <li data-scroll-reveal>
+      <p class="timeline-period"><time datetime="2026">2026</time></p>
+      <h3>{{ t.masters }}</h3>
+      <p><a href="https://www.gov.br/inpe/pt-br">{{ t.inpe }}</a></p>
+    </li>
+    <li data-scroll-reveal>
+      <p class="timeline-period"><time datetime="2024">2024</time></p>
+      <h3>{{ t.undergraduate }}</h3>
+      <p><a href="https://www.ufopa.edu.br/ufopa/">{{ t.ufopa }}</a></p>
+    </li>
+  </ol>
+</section>
+</div>
+<div class="academic-band">
+<section id="pesquisa" class="container section research-grid" aria-labelledby="research-title" tabindex="-1">
+    <div data-scroll-reveal>
+      <h2 id="research-title">{{ t.research_areas }}</h2>
+      <h3>{{ t.current_research }}</h3>
+      <p>{{ t.research_description }}</p>
+    </div>
+    <div class="topics" aria-label="{{ t.research_topics }}" data-scroll-reveal>
+      <details>
+        <summary>{{ t.modeling }}</summary>
+        <p>{{ t.modeling_description }}</p>
+      </details>
+      <details>
+        <summary>{{ t.assimilation }}</summary>
+        <p>{{ t.assimilation_description }}</p>
+      </details>
+      <details>
+        <summary>{{ t.instrumentation }}</summary>
+        <p>{{ t.instrumentation_description }}</p>
+      </details>
+    </div>
+  </section>
+</div>
+<div class="academic-band academic-band-alt">
+<section id="publicacoes" class="container section" aria-labelledby="selected-title" tabindex="-1">
+    <div class="section-heading" data-scroll-reveal>
+      <h2 id="selected-title">{{ t.publications }}</h2>
+      <a class="text-link" href="{{ site.author.googlescholar }}">{{ t.scholar }}</a>
+    </div>
+    {% assign publications = site.publications | sort: 'date' | reverse %}
+    <div class="publication-filters" data-publication-filters hidden>
+      <label>{{ t.search }}
+        <input type="search" data-publication-search placeholder="{{ t.search_hint }}">
+      </label>
+      <label>{{ t.year }}
+        <select data-publication-year>
+          <option value="">{{ t.all_years }}</option>
+          {% assign previous_year = '' %}
+          {% for publication in publications %}
+            {% assign year = publication.date | date: '%Y' %}
+            {% if year != previous_year %}
+              <option value="{{ year }}">{{ year }}</option>
+              {% assign previous_year = year %}
+            {% endif %}
+          {% endfor %}
+        </select>
+      </label>
+      <p role="status" data-publication-count></p>
+    </div>
+    <ol class="publication-list">
+      {% for publication in publications %}
+        {% assign publication_title = publication.title %}
+        {% if page.language == 'en' %}
+          {% assign publication_title = publication.title_en | default: publication.title %}
+        {% endif %}
+        <li class="publication" data-year="{{ publication.date | date: '%Y' }}">
+          <time datetime="{{ publication.date | date: '%Y-%m-%d' }}">{{ publication.date | date: '%Y' }}</time>
+          <div>
+            <h3>{{ publication_title | escape }}</h3>
+            <p>{{ publication.venue | escape }}</p>
+            <details>
+              <summary>{{ t.abstract }}</summary>
+              <div class="publication-abstract">
+                {% if page.language == 'en' and publication.summary_en %}
+                  <p>{{ publication.summary_en | escape }}</p>
+                {% else %}
+                  {{ publication.content | markdownify }}
+                {% endif %}
+                {% if publication.citation %}
+                  <p><strong>{{ t.citation }}</strong></p>
+                  <p>{{ publication.citation }}</p>
+                {% endif %}
+              </div>
+            </details>
+            {% if publication.paperurl %}
+              <a class="text-link" href="{{ publication.paperurl | escape }}" aria-label="{{ t.journal }}: {{ publication_title | escape }}">{{ t.journal }}</a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+    <p class="empty-results" data-publication-empty hidden>{{ t.empty }}</p>
+  </section>
+</div>
+<div class="academic-band">
+<section id="experiencia" class="container section feature-grid" aria-labelledby="experience-title" tabindex="-1">
+    <img class="feature-image" src="{{ '/images/fundo.jpg' | relative_url }}" alt="{{ t.balloon }}" width="800" height="800" loading="lazy" data-scroll-reveal>
+    <div data-scroll-reveal>
+      <p class="eyebrow">{{ t.experience }}</p>
+      <h2 id="experience-title">{{ t.observations }}</h2>
+      <p>{{ t.observations_description }}</p>
+      <a class="text-link" href="#projetos">{{ t.explore_portfolio }}</a>
+    </div>
+  </section>
+</div>
+{% assign featured_project = site.portfolio | first %}
+<div class="academic-band academic-band-alt">
+  <section id="projetos" class="container section" aria-labelledby="project-title" tabindex="-1">
+    <div data-scroll-reveal>
+      <h2 id="project-title">{{ t.portfolio }}</h2>
+      <p>{{ t.project_description }}</p>
+    </div>
+    {% include map-gallery.html maps=featured_project.maps language=page.language %}
+  </section>
+</div>
+
+<div class="academic-band">
+  <section id="lattes" class="container section" aria-labelledby="lattes-title" tabindex="-1">
+    <h2 id="lattes-title" data-scroll-reveal>{{ t.lattes }}</h2>
+    <div class="actions" data-scroll-reveal>
+      <a class="button button-primary" href="https://lattes.cnpq.br/1585235493457342">{{ t.open_lattes }}</a>
+      <a class="button" href="{{ '/files/lattes(CL).pdf' | relative_url }}">{{ t.open_pdf }}</a>
+    </div>
+  </section>
+</div>
